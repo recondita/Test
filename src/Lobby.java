@@ -1,13 +1,18 @@
+import java.util.ArrayList;
+
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
+
 import com.sun.xml.internal.txw2.annotation.XmlElement;
 
 @XmlRootElement
-public class Lobby
+public class Lobby extends ArrayList<String>
 {
-	public String [] spieler={"Test1","Test2","Felix ist doof", "ich bin müde"};
+
+	private static final long serialVersionUID = 1L;
+	public String [] spieler;
 	int id;
-	public Lobby()
+	public Lobby ()
 	{
 		// TODO Auto-generated constructor stub
 	}
